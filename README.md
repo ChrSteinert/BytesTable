@@ -33,7 +33,8 @@ open BytesTable
 fsi.AddPrinter BytesTable.getBytesTable
 
 let bytes = 
-    "yNOjBk3eyPczM4pMCABFAAA3o9kAAIARFRTAqAB3wKgAAcoeADUAI0yXvUgBAAABAAAAAAAABmdvb2dsZQJkZQAAAQAB" // A TCP frame of a DNS request for the address of 'google.de'
+    // A TCP frame of a DNS request for the address of 'google.de'
+    "yNOjBk3eyPczM4pMCABFAAA3o9kAAIARFRTAqAB3wKgAAcoeADUAI0yXvUgBAAABAAAAAAAABmdvb2dsZQJkZQAAAQAB" 
     |> System.Convert.FromBase64String
 
 bytes // prints the following:
